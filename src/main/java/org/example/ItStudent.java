@@ -1,6 +1,6 @@
 package org.example;
 
-public class ItStudent extends Student implements StudentData {
+public class ItStudent extends StudentRecord implements StudentData {
 
 
     @Override

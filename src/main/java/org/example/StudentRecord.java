@@ -1,15 +1,15 @@
 package org.example;
 
-public class Student {
+public class StudentRecord {
     private int studentNum = 218006098;
     private String name = "Cameron";
 
-    public Student(int studentNum, String name) {
+    public StudentRecord(int studentNum, String name) {
         this.studentNum = studentNum;
         this.name = name;
     }
 
-    public Student() {
+    public StudentRecord() {
 
     }
 

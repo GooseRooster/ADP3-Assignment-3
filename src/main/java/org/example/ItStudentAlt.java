@@ -1,10 +1,10 @@
 package org.example;
 
 public class ItStudentAlt implements StudentData {
-private Student student;
+private StudentRecord studentRecord;
 
 public ItStudentAlt() {
-    this.student = new Student();
+    this.studentRecord = new StudentRecord();
 }
 
     @Override
@@ -23,9 +23,9 @@ public ItStudentAlt() {
             markList += subject[i] + ": " + mark[i] + "\n";
         }
         if (calculateAverage(mark) >= 50) {
-            return "Student: " + student.getName() + " with student number " + student.getStudentNum() + " has passed, with the following marks: " + "\n" + markList;
+            return "Student: " + studentRecord.getName() + " with student number " + studentRecord.getStudentNum() + " has passed, with the following marks: " + "\n" + markList;
         }
         else
-            return "Student: " + student.getName() + " with student number " + student.getStudentNum() + " has failed, with the following marks : " + "\n" + markList;
+            return "Student: " + studentRecord.getName() + " with student number " + studentRecord.getStudentNum() + " has failed, with the following marks : " + "\n" + markList;
     }
 }
